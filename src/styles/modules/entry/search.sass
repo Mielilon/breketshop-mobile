@@ -1,0 +1,70 @@
+.search 
+  margin-top: 14px 
+.search-field-wrapper 
+  width: 100% 
+  position: relative 
+  &:before 
+    content: "" 
+    position: absolute 
+    width: 17px 
+    height: 100% 
+    left: 16px 
+    background-repeat: no-repeat 
+    background-size: contain 
+    background-position: center 
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.62007' cy='7.75548' r='5.87335' transform='rotate(-5.72863 7.62007 7.75548)' stroke='%233298D7' stroke-width='2'/%3E%3Cpath d='M13 14.3076L15.5 17' stroke='%233298D7' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A") 
+.search-field 
+  color: #151515 
+  padding-left: 50px 
+  border-color: #288dcd 
+  &::-moz-placeholder 
+    color: #3298d7 
+  &:-ms-input-placeholder 
+    color: #3298d7 
+  &::placeholder 
+    color: #3298d7 
+.search-clinic 
+  .select-wrapper 
+    margin-top: 10px 
+.search-more 
+  margin-top: 30px 
+.search-result 
+  position: absolute 
+  display: none 
+  flex-direction: column 
+  align-items: center 
+  justify-content: flex-start 
+  z-index: 1000 
+  background: #fff 
+  top: 100% 
+  border: 1px solid #3297D7 
+  border-top: none 
+  padding: 0 
+  list-style: none 
+  width: calc(100% - 36px) 
+  overflow: auto 
+  max-height: 50vh 
+  &.active 
+    display: flex 
+.search-result__item 
+  display: flex 
+  align-items: flex-start 
+  justify-content: flex-start 
+  padding: 12px 12px 0 12px 
+  gap: 12px 
+.search-result__img 
+  width: 60px 
+  height: auto 
+.search-result__title 
+  font-size: 12px 
+  line-height: 16px 
+  color: #8E8E8E 
+  margin: 4px 0 
+.search-result__link 
+  font-size: 12px 
+  line-height: 16px 
+  color: #151515 
+.search-result__price 
+  font-family: 'Gotham Pro Bold' 
+  font-size: 12px 
+  line-height: 16px 

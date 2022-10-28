@@ -1,0 +1,92 @@
+.gift-choice__close 
+  margin-left: auto 
+.gift-choice 
+  margin-top: 25px 
+  padding-bottom: 100px 
+.gift-choice__text 
+  margin: 5px 0 0 
+  color: #8e8e8e 
+.gifts-wrapper 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: space-between 
+  margin-top: 30px 
+.gift 
+  max-width: 32% 
+  border-radius: 15px 
+  padding: 6px 
+  margin-left: -6px 
+  margin-right: -6px 
+  position: relative 
+  margin-bottom: 30px 
+  border: 2px solid #fff 
+.gift--active 
+  border: 2px solid #b3d8f0 
+.checkbox 
+  & + .gift__checkbox-label 
+    opacity: 0 
+    position: absolute 
+    z-index: -100 
+  &:checked 
+    & + .gift__checkbox-label 
+      opacity: 1 
+      z-index: 2 
+.gift__img-wrapper 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  overflow: hidden 
+  height: 115px 
+  width: 100% 
+.gift__img 
+  width: 100% 
+  height: auto 
+.gift__text 
+  margin: 0 
+.gift-card 
+  position: fixed 
+  bottom: 60px 
+  padding-bottom: 20px 
+  z-index: 4 
+  background-color: #fff 
+  width: 100% 
+  border-top: 1px solid #e5e5e5 
+  padding-top: 20px 
+  display: none 
+.gift-card--active 
+  display: block 
+  & ~ .gift-choice 
+    padding-bottom: 380px 
+.gift__close 
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.661133 0.660156L18.3388 18.3378' stroke='%23C4C4C4' stroke-width='1.5'/%3E%3Cpath d='M18.3389 0.660156L0.661198 18.3378' stroke='%23C4C4C4' stroke-width='1.5'/%3E%3C/svg%3E%0A") 
+  margin-left: auto 
+.gift-card__content 
+  display: flex 
+  align-items: center 
+  flex-wrap: wrap 
+.gift-card__img-wrapper 
+  width: 50% 
+  overflow: hidden 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+.gift-card__img 
+  width: 100% 
+  height: auto 
+.gift-card__desc 
+  width: 50% 
+.gift-card__text 
+  margin: 4px 0 8px 
+.gift-cart__list 
+  padding: 0 
+  font-size: 12px 
+  margin-left: 12px 
+  line-height: 18px 
+  color: #151515 
+.ordering-gift 
+  margin-top: 16px 
+  display: flex 
+  flex-direction: column 
+  align-items: center 
+  justify-content: flex-start 
+  width: min-content 

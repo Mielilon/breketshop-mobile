@@ -1,0 +1,115 @@
+.popup-wrapper
+  z-index: 1001
+  background: rgba(0, 0, 0, 0.5)
+  position: fixed
+  height: 100vh
+  width: 100vw
+  top: 0
+  left: 0
+  align-items: center
+  justify-content: center
+  display: none
+  &.active
+    display: flex
+  &--note
+    height: auto
+    top: 70px
+    background: transparent
+    .popup, .popup__header
+      background: #97FCA7
+      color: #186223
+    .popup__close
+      &::before, &::after
+        background-color: #186223
+    .popup__header
+      padding-bottom: 0
+      padding-top: 0
+      margin-top: -16px
+    .popup__main
+      padding-top: 10px
+  &--warning
+    .popup, .popup__header
+      background: #FFFFB2
+      color: #7a7a01
+    .popup__close
+        &::before, &::after
+          background: #7a7a01
+  &--error
+    .popup, .popup__header
+      background: #ff8c86
+      color: #8F2A26
+    .popup__close
+        &::before, &::after
+          background: #8F2A26
+  &--message
+    .popup__header
+      background: #3298d7
+  &--header-error
+    .popup__header
+      background: #E25049
+  &--list
+    .popup__main
+      max-height: calc( 100vh - 400px )
+      overflow: auto
+      gap: 10px
+.popup
+  background: #fff
+  width: calc( 100vw - 36px )
+  overflow: hidden
+  border-radius: 10px
+  .select
+    max-height: 50px
+    overflow: auto
+.popup__close
+  position: relative
+  height: 20px
+  width: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 16px
+  margin-right: 16px
+  margin-left: auto
+  &::before, &::after
+    content: ''
+    position: absolute
+    height: 16px
+    width: 2px
+    background: #3298d7
+  &::before
+    transform: rotate(-45deg)
+  &::after
+    transform: rotate(45deg)
+.popup__header
+  padding: 16px
+  background-color: #FFAD38
+  color: #fff
+  font-family: "Gotham Pro Bold"
+  font-size: 14px
+  letter-spacing: 0.5px
+.popup__main
+  display: flex
+  flex-direction: column
+  padding: 16px
+  font-size: 14px
+.popup__footer
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  padding: 10px 18px 10px
+  gap: 6px
+.popup__button
+  border-radius: 13px
+  padding: 2px 20px
+.popup-list
+  position: absolute
+  height: 100%
+  display: flex
+  flex-direction: column
+  gap: 10px
+  .popup-wrapper
+    position: relative
+.load
+  height: 70px
+  width: 70px
+  margin: auto

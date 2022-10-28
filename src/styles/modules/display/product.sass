@@ -1,0 +1,246 @@
+.product 
+  margin-top: 15px 
+  margin-bottom: 15px 
+  width: 30% 
+  display: flex 
+  flex-direction: column 
+  justify-content: flex-start 
+  align-items: flex-start 
+  position: relative 
+.product__img 
+  height: 90px 
+  width: auto 
+  max-width: 100% 
+  margin-left: auto 
+  margin-right: auto 
+.product__label 
+  position: absolute 
+  top: 14px 
+  font-size: 11px 
+  line-height: 16px 
+  border-radius: 6px 
+  color: #fff 
+  padding: 1px 6px 
+  text-transform: uppercase 
+.product__price 
+  color: #f54082 
+  margin: 6px 0 3px 
+  font-size: 14px 
+  line-height: 16px 
+  margin-top: auto
+.product__name
+  font-size: 12px 
+  line-height: 18px 
+  text-decoration-line: underline 
+  color: #288dcd 
+  margin: 0 
+  margin-bottom: 6px
+.product__manufacturer 
+  color: #151515 
+  font-size: 12px 
+  line-height: 18px 
+  margin: 0
+  margin-top: 10px 
+.product__no-price
+  margin-bottom: auto
+.product__button-wrapper 
+  display: flex 
+  width: 100% 
+.product__button 
+  margin-top: 4px 
+  width: 100% 
+.product__more 
+  margin-top: 20px 
+.products 
+  margin-top: 35px 
+  .content 
+    align-items: stretch 
+.product-images-wrapper,.quick-order__map 
+  margin-top: 20px 
+.product-images 
+  padding-bottom: 30px!important 
+.product-name 
+  font-family: "Gotham Pro Bold" 
+  font-weight: 700 
+  font-size: 14px 
+  line-height: 16px 
+  margin: 0 
+.product-production 
+  font-size: 14px 
+  line-height: 16px 
+  margin: 8px 0 0 
+  color: #8e8e8e 
+.product-price-wrapper 
+  margin-top: 15px 
+  margin-bottom: 0 
+  .product-price 
+    font-size: 12px 
+    line-height: 16px 
+    margin: 0 5px 6px 0 
+  .product-price--price 
+    font-size: 20px 
+    line-height: 22px 
+    color: #f54082 
+.product-price 
+  margin: 15px 0 
+  color: #151515 
+  font-family: "Gotham Pro Bold" 
+  font-weight: 700 
+  font-size: 20px 
+.product-stock 
+  margin-top: 10px 
+.product-desc-wrapper 
+  margin-top: 20px 
+  padding-bottom: 20px 
+  border-bottom: 1px solid #e9e9e9 
+.product-desc 
+  margin-top: 10px 
+  margin-bottom: 5px 
+.product-configuration-wrapper 
+  margin-top: 6px 
+.product-configuration__counter 
+  display: flex 
+  flex-direction: column 
+  align-items: center 
+  justify-content: flex-start 
+  margin-top: 5px 
+.product-configuration__num 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  position: relative 
+  height: 30px 
+  width: 27px 
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='33' viewBox='0 0 28 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.6444 26.0348C-0.816309 19.4919 4.38275 7.09998 6.96003 1.83115C7.28218 1.00802 8.89295 0.349661 9.85942 3.31301C10.9529 6.66578 12.2756 8.2529 14.2086 8.2529C16.1415 8.2529 17.191 7.03877 18.5577 3.31301C19.1014 1.83102 20.4907 -0.144196 21.4572 1.83115C25.3231 8.2529 28.3192 22.0832 26.7728 26.0348C24.8398 30.9744 21.6376 31.4683 20.1879 31.4683C18.7382 31.4683 16.2342 29.5 14.6879 29.5C13.1415 29.5 10.598 31.4683 8.89295 31.4683C7.1879 31.4683 3.68787 31.4683 1.6444 26.0348Z' fill='%23F1F2F4' stroke='%23E6E6E6' stroke-width='1.5'/%3E%3C/svg%3E") 
+  background-repeat: no-repeat 
+  background-size: contain 
+  background-position: center 
+  font-family: "Gotham Pro Bold" 
+  font-weight: 700 
+  font-size: 12px 
+  line-height: 20px 
+  padding-top: 6px 
+  color: #8e8e8e 
+.product-configuration__amount 
+  right: -2px 
+  top: -4px 
+  width: 14px 
+  height: 14px 
+  font-size: 8px 
+.product-configuration__button 
+  border: 1px solid #cacbcd 
+  background-color: transparent 
+  border-radius: 3px 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  height: 25px 
+  width: 25px 
+  position: relative 
+  margin-top: 7px 
+  &:active 
+    background-color: #3298d7 
+    border-color: #3298d7 
+.product-configuration__button:active::after,.product-configuration__button:active::before 
+  background-color: #fff 
+.product-configuration__button--more::after,.product-configuration__button--more::before 
+  content: "" 
+  position: absolute 
+  background-color: #151515 
+.product-configuration__button--more 
+  &::before 
+    height: 7px 
+    width: 1px 
+  &::after 
+    height: 1px 
+    width: 7px 
+.product-configuration__button--less 
+  &::before 
+    content: "" 
+    position: absolute 
+    background-color: #151515 
+    height: 1px 
+    width: 7px 
+.product-configuration__addition 
+  position: absolute 
+  height: 100% 
+  width: 100% 
+  opacity: 0 
+  &:checked 
+    & ~ .product-configuration__addition-label 
+      background-color: #3298d7 
+      border-color: #3298d7 
+      color: #fff 
+.addition-checkbox-wrapper 
+  position: relative 
+  margin-top: 7px 
+.product-configuration__addition-label 
+  height: 25px 
+  width: 25px 
+  font-size: 12px 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  border: 1px solid #cacbcd 
+  background-color: transparent 
+  border-radius: 3px 
+.product-configuration 
+  display: flex 
+  align-items: flex-start 
+  justify-content: space-between 
+  width: 100% 
+.border-line 
+  width: 100% 
+  height: 1px 
+  background-color: #e9e9e9 
+  margin-top: 16px 
+  margin-bottom: 16px 
+.product-configuration--reverse 
+  .product-configuration__num 
+    order: 3 
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='33' viewBox='0 0 28 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.6444 6.96517C-0.816309 13.5081 4.38275 25.9 6.96003 31.1689C7.28218 31.992 8.89295 32.6503 9.85942 29.687C10.9529 26.3342 12.2756 24.7471 14.2086 24.7471C16.1415 24.7471 17.191 25.9612 18.5577 29.687C19.1014 31.169 20.4907 33.1442 21.4572 31.1689C25.3231 24.7471 28.3192 10.9168 26.7728 6.96517C24.8398 2.02565 21.6376 1.53169 20.1879 1.53169C18.7382 1.53169 16.2342 3.5 14.6879 3.5C13.1415 3.5 10.598 1.53169 8.89295 1.53169C7.1879 1.53169 3.68787 1.53169 1.6444 6.96517Z' fill='%23F1F2F4' stroke='%23E6E6E6' stroke-width='1.5'/%3E%3C/svg%3E") 
+    padding-top: 0 
+    margin-top: 10px 
+  .addition-checkbox-wrapper 
+    order: 2 
+.product-configuration__input 
+  opacity: 0 
+  position: absolute 
+  z-index: -100 
+  left: -1000 
+.product-configuration__controls 
+  margin-top: 30px 
+  display: flex 
+  align-items: center 
+  justify-content: space-between 
+  width: 100% 
+.product-configuration__control 
+  background: 0 0 
+  border: 2px solid #3298d7 
+  border-radius: 15px 
+  color: #3298d7 
+  font-family: "Gotham Pro Bold" 
+  font-weight: 700 
+  font-size: 12px 
+  line-height: 16px 
+  padding: 6px 8px 
+  min-height: 40px 
+  margin-right: 8px 
+  flex-grow: 1 
+  &:last-child 
+    margin-right: 0 
+.product-configuration__control--active 
+  background-color: #3298d7 
+  color: #fff 
+.product-name-wrapper 
+  margin-top: 10px 
+.product-price--old 
+  font-family: 'Gotham Pro Regular' 
+  text-decoration: line-through 
+  color: #151515!important 
+.product__label--new 
+  background: #2cb742 
+.product__label--popular 
+  background: #f54040 
+.product__label--sale 
+  background: #ffb717 

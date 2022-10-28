@@ -1,0 +1,108 @@
+.options-buttons 
+  display: flex 
+  align-items: center 
+  justify-content: flex-start 
+  &::-webkit-scrollbar 
+    width: 0 
+.options-button 
+  width: calc(50% - 10px) 
+  font-size: 12px 
+  height: 85px 
+  display: flex 
+  flex-direction: column 
+  align-items: center 
+  justify-content: flex-start 
+  box-shadow: 0 0 15px rgba(0,0,0,.15) 
+  border-radius: 5px 
+  margin-right: 20px 
+  color: #b9bcbd 
+  position: relative 
+  .airplane-icon 
+    height: 55px 
+    width: 48px 
+    background-image: url(../../img/icons/airplane.png) 
+    background-position: center 
+    background-size: contain 
+    background-repeat: no-repeat 
+  &:last-child 
+    margin-right: 0 
+  svg 
+    height: 55px 
+.options-button--active 
+  color: #3298d7 
+  .airplane-icon 
+    background-image: url(../../img/icons/airplane-2.png) 
+  .fill-color 
+    path 
+      fill: #3298d7 
+  &::before 
+    content: "" 
+    position: absolute 
+    height: 14px 
+    width: 14px 
+    right: 14px 
+    top: 10px 
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5L5.28571 7L11 1' stroke='%233297D7' stroke-width='1.5'/%3E%3C/svg%3E") 
+    background-repeat: no-repeat 
+    background-size: contain 
+    background-position: center 
+.options-button--active svg circle,.options-button--active svg path,.options-button--active svg rect 
+  stroke: #3298d7 
+.payment-options 
+  .title 
+    margin-top: 25px 
+    margin-bottom: 15px 
+.payment-options__content 
+  font-size: 14px 
+  line-height: 22px 
+  margin-top: 20px 
+.payment-options__imgs-wrapper 
+  display: flex 
+  align-items: center 
+  justify-content: space-between 
+  margin: 20px 0 
+.shipping-options 
+  overflow: hidden 
+  .title 
+    margin-top: 25px 
+  .title--little 
+    margin-top: 22px 
+    margin-bottom: 0 
+  .payment-options__content 
+    margin-top: 14px 
+    margin-bottom: 0 
+    b 
+      font-family: "Gotham Pro Bold" 
+  .options-button 
+    min-width: 44% 
+    height: 94px 
+  .options-buttons 
+    overflow-x: scroll 
+    height: 150px 
+    padding-left: 20px 
+    padding-right: 40px 
+    margin-left: -20px 
+    margin-right: -40px 
+    text-align: center 
+.option 
+  display: flex 
+  align-items: center 
+  gap: 5px 
+  white-space: nowrap 
+  background-color: #CBE7FF 
+  border-radius: 8px 
+  width: min-content 
+  padding: 6px 10px 
+  color: #151515 
+  font-size: 12px 
+  .close 
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.3745 1L1.00023 10.3743' stroke='%23151515' stroke-width='1.5'/%3E%3Cpath d='M1 1L10.3743 10.3743' stroke='%23151515' stroke-width='1.5'/%3E%3C/svg%3E") 
+    width: 10px 
+    height: 10px 
+    background-repeat: no-repeat 
+    background-size: contain 
+.options-wrapper 
+  display: flex 
+  flex-wrap: wrap 
+  gap: 10px 
+  margin-top: 15px 

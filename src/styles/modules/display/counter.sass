@@ -1,0 +1,48 @@
+.counter 
+  width: 100% 
+  display: flex 
+  border: 2px solid #3298d7 
+  border-radius: 15px 
+  height: 40px 
+  justify-content: space-between 
+  overflow: hidden 
+  align-items: center 
+  margin-top: 4px 
+  display: none 
+  &.active 
+    display: flex 
+.counter__num 
+  flex-grow: 1 
+  max-width: 40px 
+  border: none 
+  outline: none 
+  text-align: center 
+.counter__control 
+  background-color: #fff 
+  border: none 
+  outline: none 
+  width: 30px 
+  height: 27px 
+  position: relative 
+  display: flex 
+  justify-content: center 
+  align-items: center 
+  &::before 
+    content: '' 
+    position: absolute 
+    height: 2px 
+    width: 10px 
+    background-color: #3298d7 
+.counter__inc 
+  border-left: 2px solid #ABD2F2 
+  &::after 
+    content: '' 
+    position: absolute 
+    width: 2px 
+    height: 10px 
+    background-color: #3298d7 
+.counter__dec 
+  border-right: 2px solid #ABD2F2 
+.button 
+  &.hidden 
+    display: none 

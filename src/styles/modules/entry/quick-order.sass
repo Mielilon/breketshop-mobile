@@ -1,0 +1,211 @@
+.quick-order-wrapper 
+  position: fixed 
+  bottom: 60px 
+  background: rgba(34,43,57,.7) 
+  height: calc(100vh - 60px) 
+  z-index: 10 
+  width: 100% 
+  display: flex 
+  align-items: flex-end 
+.quick-order 
+  background-color: #fff 
+  width: 100% 
+  padding: 20px 0 
+  overflow-y: auto 
+  max-height: 80vh 
+  .registration__tel-button 
+    height: 40px 
+    width: 74px 
+  .account-info__label 
+    margin-top: 4px 
+  .account-info-wrapper 
+    margin-bottom: -20px 
+  .ordering-radio-wrapper 
+    margin-top: 20px 
+  .radio-label 
+    font-size: 13px 
+    padding: 22px 18px 
+    &:nth-child(2) 
+      border-top: none 
+.close--gray 
+  margin-left: auto 
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='20' viewBox='0 0 19 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.661133 1L18.3388 18.6777' stroke='%23C4C4C4' stroke-width='1.5'/%3E%3Cpath d='M18.3389 1L0.661198 18.6777' stroke='%23C4C4C4' stroke-width='1.5'/%3E%3C/svg%3E") 
+.quick-order__title 
+  font-family: "Gotham Pro Bold" 
+  font-style: normal 
+  font-weight: 700 
+  font-size: 16px 
+  line-height: 22px 
+  margin: 7px auto 20px 
+.quick-order__options 
+  display: flex 
+  align-items: center 
+  justify-content: space-between 
+  background: #f1f2f4 
+  border-radius: 15px 
+  padding: 4px 
+  gap: 4px 
+.quick-order__option 
+  height: 35px 
+  width: 100% 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  color: #b3b3b3 
+  background: #f1f2f4 
+  border: none 
+  font-size: 12px 
+  &.active 
+    background: #fff 
+    border: 1.5px solid #3297d7 
+    border-radius: 13px 
+    color: #3297d7 
+.quick-order__button 
+  border-radius: 15px 
+  height: 40px 
+  font-family: "Gotham Pro Bold" 
+  font-style: normal 
+  font-weight: 700 
+  font-size: 13px 
+  line-height: 22px 
+  color: #fff 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  margin-top: 40px 
+  background: #f54082 
+  &:disabled 
+    background: #cacbcd 
+.quick-order__input 
+  margin-top: 36px 
+  font-weight: 400 
+  font-size: 13px 
+  line-height: 16px 
+  color: #151515 
+  border: none 
+  border-bottom: 1px solid rgba(0,0,0,.1) 
+  padding: 6px 0 
+  outline: 0 
+  &::-moz-placeholder 
+    font: inherit 
+    color: #151515 
+  &:-ms-input-placeholder 
+    font: inherit 
+    color: #151515 
+  &::placeholder 
+    font: inherit 
+    color: #151515 
+.timing 
+  margin-top: 40px 
+  .radio-label 
+    padding: 16px 0 
+    display: flex 
+    align-items: center 
+    justify-content: center 
+    color: #8e8e8e 
+    font-size: 13px 
+    line-height: 25px 
+    transition: .3s 
+    span 
+      margin-left: 12px 
+  .radio 
+    &:checked 
+      & + .radio-label 
+        color: #151515 
+        transition: .2s 
+        font-size: 16px 
+        &::before 
+          background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='8.25' stroke='%233297D7' stroke-width='1.5'/%3E%3Cpath d='M8 7.5L6.5 6L4.5 7.5L10.5 13.5L19 5.5L15 1L8 7.5Z' fill='white'/%3E%3Cpath d='M5 8.5L8 11.5L14 6' stroke='%233297D7' stroke-width='1.5'/%3E%3C/svg%3E%0A") 
+          width: 18px 
+          height: 18px 
+          display: flex 
+          align-items: center 
+          justify-content: center 
+          border: none 
+          border-radius: 0 
+          background-repeat: no-repeat 
+          background-size: contain 
+          background-position: center 
+          left: 0 
+          right: auto 
+          margin-right: 10px 
+          position: relative 
+.timing .radio-label::after,.timing .radio-label::before 
+  display: none 
+.quick-order__payment 
+  font-size: 13px 
+  line-height: 16px 
+  margin: 34px 0 
+  position: relative 
+  padding-left: 26px 
+  &::before 
+    content: "" 
+    position: absolute 
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='13' viewBox='0 0 19 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.75' y='0.75' width='17.5' height='11.5' rx='2.25' stroke='%233297D7' stroke-width='1.5'/%3E%3Cpath d='M0 4H18' stroke='%233297D7' stroke-width='1.5'/%3E%3C/svg%3E%0A") 
+    background-size: contain 
+    background-position: center 
+    justify-content: center 
+    height: 14px 
+    width: 20px 
+    left: 0 
+.quick-order__info 
+  padding: 18px 18px 0 
+  margin-bottom: -20px 
+  border-top: 1px solid rgba(0,0,0,.1) 
+  gap: 8px 
+  display: flex 
+  flex-direction: column 
+.quick-order__info-item 
+  display: flex 
+  align-items: center 
+  justify-content: space-between 
+  font-size: 13px 
+  line-height: 16px 
+  span 
+    font-family: "Gotham Pro Bold" 
+.quick-order__info-item--blue 
+  span 
+    font-family: "Gotham Pro Regular" 
+    color: #3297d7 
+.quick-order__title--light 
+  font-family: "Gotham Pro Regular" 
+  font-style: normal 
+  font-weight: 400 
+  font-size: 13px 
+  line-height: 18px 
+  text-align: center 
+.quick-order__card 
+  box-shadow: 0 0 15px rgba(0,0,0,.15) 
+  border-radius: 5px 
+  padding-bottom: 10px 
+  margin-bottom: 10px 
+.quick-order__card-header 
+  background: #ebf5fb 
+  border-radius: 5px 
+  padding: 14px 20px 
+  font-family: "Gotham Pro Bold" 
+  font-style: normal 
+  font-weight: 700 
+  font-size: 13px 
+  line-height: 22px 
+  color: #3297d7 
+.quick-order__card-main 
+  font-weight: 400 
+  font-size: 12px 
+  line-height: 16px 
+  b 
+    font-family: "Gotham Pro Bold" 
+  p 
+    padding: 0 20px 
+    &:first-child 
+      border-bottom: 1px solid rgba(0,0,0,.1) 
+      padding-bottom: 20px 
+      margin-bottom: 20px 
+      margin-top: 20px 
+  a 
+    color: #3297d7 
+    text-decoration: underline 
+.quick-order-prev 
+  position: absolute 
+  margin: 0 
+  margin-top: -4px 

@@ -1,0 +1,197 @@
+.cart 
+  margin-top: 30px 
+.cart-product 
+  display: flex 
+  align-items: flex-start 
+.cart-product__info 
+  display: flex 
+  flex-wrap: wrap 
+  justify-content: flex-start 
+.cart-product__price 
+  font-family: "Gotham Pro Bold" 
+  font-size: 12px 
+  line-height: 16px 
+  margin: 0 
+.cart-product__price--old 
+  color: #8e8e8e 
+  font-family: "Gotham Pro Regular" 
+  text-decoration: line-through 
+.cart-product__price--sale 
+  color: #f54082 
+  font-family: "Gotham Pro Regular" 
+  margin-left: 10px 
+.cart-product__desc,.cart-product__price:first-child,.cart-product__title 
+  width: 100% 
+  margin: 0 0 3px 
+.cart-product__title 
+  margin-top: 8px 
+.cart-product__desc 
+  color: #8e8e8e 
+  font-size: 14px 
+.cart-product__img 
+  width: 80px 
+.cart-product__img-wrapper 
+  display: flex 
+  align-items: flex-start 
+  position: relative 
+  padding-right: 16px 
+  padding-top: 6px 
+.cart-product__label 
+  position: absolute 
+  top: 0 
+  right: 0 
+.cart-items 
+  margin-top: 20px 
+.cart-product__control-value 
+  width: -webkit-min-content 
+  width: -moz-min-content 
+  width: min-content 
+  border: none 
+  outline: 0 
+  text-align: center 
+  font-size: 12px 
+  line-height: 16px 
+.cart-product__control-button 
+  height: 6px 
+  width: 12px 
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8L7 2L13 8' stroke='%238E8E8E' stroke-width='1.5'/%3E%3C/svg%3E%0A") 
+  background-repeat: no-repeat 
+  background-position: center 
+  background-size: contain 
+  border: none 
+  background-color: transparent 
+  margin-bottom: 18px 
+.cart-product__control-button--less 
+  transform: rotate(180deg) 
+  margin-top: 18px 
+.cart-product__control 
+  display: flex 
+  align-items: center 
+  justify-content: flex-start 
+  flex-direction: column 
+  margin: 0 12px 
+.card-product__delete 
+  border: none 
+  background-color: transparent 
+  height: 18px 
+  width: 14px 
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='17' viewBox='0 0 13 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1.5' y='5.5' width='10' height='11' rx='0.5' stroke='%23B9BCBD'/%3E%3Cpath d='M1.22624 4.50709L1.80135 5.16063C1.9912 5.37637 2.26469 5.5 2.55207 5.5H10.4479C10.7353 5.5 11.0088 5.37637 11.1986 5.16063L11.7738 4.50709C11.9196 4.3414 12 4.12825 12 3.90754C12 3.40632 11.5937 3 11.0925 3H1.90754C1.40632 3 1 3.40632 1 3.90754C1 4.12825 1.08043 4.3414 1.22624 4.50709Z' stroke='%23B9BCBD'/%3E%3Cpath d='M5 3V2C5 1.44772 5.44772 1 6 1H7C7.55228 1 8 1.44772 8 2V3' stroke='%23B9BCBD'/%3E%3Cpath d='M4 9V17' stroke='%23B9BCBD'/%3E%3Cpath d='M6.5 9V17' stroke='%23B9BCBD'/%3E%3Cpath d='M9 9V17' stroke='%23B9BCBD'/%3E%3C/svg%3E") 
+  background-position: center 
+  background-repeat: no-repeat 
+  background-size: contain 
+.delete-selected 
+  color: #f54082 
+  font-weight: 400 
+  font-size: 11px 
+  line-height: 20px 
+  display: flex 
+  padding-left: 22px 
+  align-items: center 
+  justify-content: flex-start 
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='17' viewBox='0 0 13 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1.5' y='5.5' width='10' height='11' rx='0.5' stroke='%23F54082'/%3E%3Cpath d='M1.22624 4.50709L1.80135 5.16063C1.9912 5.37637 2.26469 5.5 2.55207 5.5H10.4479C10.7353 5.5 11.0088 5.37637 11.1986 5.16063L11.7738 4.50709C11.9196 4.3414 12 4.12825 12 3.90754C12 3.40632 11.5937 3 11.0925 3H1.90754C1.40632 3 1 3.40632 1 3.90754C1 4.12825 1.08043 4.3414 1.22624 4.50709Z' stroke='%23F54082'/%3E%3Cpath d='M5 3V2C5 1.44772 5.44772 1 6 1H7C7.55228 1 8 1.44772 8 2V3' stroke='%23F54082'/%3E%3Cpath d='M4 9V17' stroke='%23F54082'/%3E%3Cpath d='M6.5 9V17' stroke='%23F54082'/%3E%3Cpath d='M9 9V17' stroke='%23F54082'/%3E%3C/svg%3E") 
+  background-position: start 
+  background-repeat: no-repeat 
+  background-size: 14px 18px 
+  border: none 
+  background-color: transparent 
+.cart-control 
+  display: flex 
+  align-items: center 
+  justify-content: space-between 
+.cart-control,.cart-product 
+  border-bottom: 1px solid #e9e9e9 
+  padding-bottom: 12px 
+  margin-bottom: 20px 
+.cart__order 
+  width: 100% 
+  height: 42px 
+  border: 1px solid #f54082 
+  border-radius: 15px 
+  background-color: #f54082 
+  color: #fff 
+  font-family: "Gotham Pro Bold" 
+  font-weight: 700 
+  font-size: 11px 
+  line-height: 22px 
+  margin-top: 20px 
+  margin-bottom: 40px 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  &:disabled 
+    border-color: #cacbcd 
+    background-color: #cacbcd 
+.cart-total 
+  background: #f1f2f4 
+  padding: 10px 0 
+.cart-total--white 
+  background: #fff 
+  margin-top: 20px 
+  border-bottom: 1px solid #e9e9e9 
+  padding-bottom: 8px 
+.cart-total__title 
+  font-size: 14px 
+  line-height: 22px 
+  font-family: "Gotham Pro Bold" 
+  margin-bottom: 10px 
+.cart-total__item 
+  margin: 0 0 10px 
+  font-size: 11px 
+  line-height: 16px 
+  display: flex 
+  justify-content: space-between 
+.cart-total__item--big 
+  font-size: 16px 
+  line-height: 22px 
+  font-family: "Gotham Pro Bold" 
+.cart-total__price 
+  font-family: "Gotham Pro Bold" 
+.cart-total__price--sale 
+  color: #f54082 
+.cart-bar 
+  border-top: 1px solid rgba(0, 0, 0, 0.1) 
+  position: fixed 
+  bottom: 60px 
+  background-color: #fff 
+  width: 100% 
+  z-index: 10 
+  & ~ .footer 
+    padding-bottom: 140px 
+.cart-bar__price 
+  font-size: 12px 
+  line-height: 16px 
+  font-family: "Gotham Pro Bold" 
+.cart-bar__button 
+  font-family: "Gotham Pro Bold" 
+  font-size: 11px 
+  line-height: 22px 
+  color: #fff 
+  outline: 0 
+  border: 1px solid #f54082 
+  background-color: #f54082 
+  padding: 4px 20px 
+  border-radius: 15px 
+  margin: 8px 0 
+  display: flex 
+  align-items: center 
+  justify-content: center 
+  &:disabled 
+    border-color: #cacbcd 
+    background-color: #cacbcd 
+.cart-empty 
+  padding: 30px 0 90px 
+.cart-empty__desc,.cart-empty__title 
+  width: 100% 
+  display: flex 
+  align-items: center 
+  text-align: center 
+  justify-content: center 
+.cart-empty__desc 
+  color: #8e8e8e 
+  font-size: 11px 
+  line-height: 16px 
+.cart-edit-link 
+  font-size: 12px 
+  color: #3298d7 
+  margin-top: 20px 
+  display: flex 

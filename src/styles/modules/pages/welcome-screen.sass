@@ -1,0 +1,388 @@
+.welcome-screen
+  height: 100vh
+  background: linear-gradient(180deg, #3297D7 0%, rgba(70, 211, 255, 0.7) 70%)
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-direction: column
+  padding-top: 40px
+  position: relative
+  overflow: hidden
+  svg
+    position: absolute
+.welcome-screen__title
+  font-size: 22px
+  line-height: 26px
+  font-family: 'Gotham Pro Bold'
+  text-align: center
+  color: #fff
+  margin-top: 70px
+.m-6
+  bottom: -1px
+  width: 100%
+  z-index: 10
+  height: auto
+.m-5
+  bottom: 0
+  width: 100%
+  z-index: 9
+  height: auto
+.m-4
+  bottom: 0
+  width: 100%
+  height: auto
+.m-3
+  bottom: 46px
+  z-index: 2
+  width: 100%
+  height: auto
+.m-2
+  bottom: 120px
+  z-index: 3
+  width: 100%
+  height: auto
+.m-1
+  bottom: 130px
+  right: 0
+.cloud-1
+  height: 25px
+  left: -15px
+  bottom: 55%
+.cloud-2
+  right: 20px
+  bottom: 45%
+.line-1
+  left: -140px
+  bottom: 220px
+.line-2
+  left: 0
+  bottom: 280px
+.sun
+  position: absolute
+  height: 60px
+  width: 60px
+  background-color: #fff
+  border-radius: 50%
+  top: 280px
+  display: flex
+  align-items: center
+  justify-content: center
+  &::before
+    content: ''
+    position: absolute
+    height: 90px
+    width: 90px
+    background: rgba(255, 255, 255, 0.3)
+    border-radius: 50%
+  &::after
+    content: ''
+    position: absolute
+    height: 120px
+    width: 120px
+    background: rgba(255, 255, 255, 0.2)
+    border-radius: 50%
+
+.cloud-1
+  animation-duration: 8s
+  animation-delay: 2000ms
+  animation-name: slideinCloud1
+  animation-iteration-count: infinite
+  animation-direction: alternate
+  animation-timing-function: ease-in-out
+.cloud-2
+  animation-duration: 8s
+  animation-delay: 2000ms
+  animation-name: slideinCloud2
+  animation-iteration-count: infinite
+  animation-direction: alternate
+  animation-timing-function: ease-in-out
+
+@keyframes slideinCloud1
+  from
+    left: -15px
+  to
+    left: 50px
+@keyframes slideinCloud2
+  from
+    right: 20px
+  to
+    right: -20px
+.welcome-screen--morning
+  background: linear-gradient(180deg, #EC6E41 0%, #FFB717 70%)
+.cloud-1 path, .cloud-2 path
+  fill: #F9AC55
+.line-1 path, .line-2 path
+  fill: #CF6D12
+.m-6 path
+  fill: #654A05
+.m-5 path
+  fill: #955B05
+.m-4 rect
+  fill: #FEAB1F
+.m-3 stop
+  stop-color: #ED8D25
+.m-2 path
+  fill: #CF6D12
+.m-1 path
+  fill: #EE8F1F
+.sun
+  top: auto
+  bottom: 170px
+.star, .moon, .shooting-star
+  display: none
+.welcome-screen--evening
+  background: linear-gradient(180deg, #6C2465 0%, #8E3B68 51.56%, #DA6D6F 70%)
+.cloud-1, .cloud-2
+  display: none
+.line-1 path, .line-2 path
+  fill: #913274
+.m-6 path
+  fill: #D13B8D
+.m-5 path
+  fill: #913781
+.m-4 rect
+  fill: #A33E7E
+.m-3 stop
+  stop-color: #B4447C
+.m-2 path
+  fill: #392765
+.m-1 path
+  fill: #241F55
+.sun
+  top: auto
+  bottom: 170px
+  &::before
+    background: rgba(255, 227, 129, 0.3)
+  &::after
+    background: rgba(255, 227, 129, 0.2)
+.star
+  background: #FFFFFF
+  height: 2px
+  width: 2px
+  position: absolute
+  border-radius: 50%
+  animation-duration: 1s
+  animation-delay: 2000ms
+  animation-name: star
+  animation-iteration-count: infinite
+  animation-direction: alternate
+.star--1
+  display: block
+  top: 26px
+  left: 30px
+  opacity: 0.7
+.star--2
+  display: block
+  top: 33px
+  left: 42px
+  opacity: 0.7
+  animation-delay: 3s
+.star--3
+  display: block
+  top: 34px
+  left: 150px
+  opacity: 0.7
+  animation-delay: 2.3s
+.star--4
+  display: block
+  top: 24px
+  right: 30px
+  opacity: 0.7
+.star--5
+  display: block
+  top: 66px
+  right: 84px
+  opacity: 0.7
+  animation-delay: 3.5s
+
+@keyframes star
+  to
+    opacity: 0
+
+.welcome-screen--evening
+  background: linear-gradient(180deg, #6C2465 0%, #8E3B68 51.56%, #DA6D6F 70%)
+.cloud-1, .cloud-2
+  display: none
+.line-1 path, .line-2 path
+  fill: #913274
+.m-6 path
+  fill: #241F55
+.m-5 path
+  fill: #392765
+.m-4 rect
+  fill: #A33E7E
+.m-3 stop
+  stop-color: #B4447C
+.m-2 path
+  fill: #913781
+.m-1 path
+  fill: #D13B8D
+.sun
+  top: auto
+  bottom: 170px
+  &::before
+    background: rgba(255, 227, 129, 0.3)
+  &::after
+    background: rgba(255, 227, 129, 0.2)
+.star
+  background: #FFFFFF
+  height: 2px
+  width: 2px
+  position: absolute
+  border-radius: 50%
+  animation-duration: 1s
+  animation-delay: 2000ms
+  animation-name: star
+  animation-iteration-count: infinite
+  animation-direction: alternate
+.star--1
+  display: block
+  top: 26px
+  left: 30px
+  opacity: 0.7
+.star--2
+  display: block
+  top: 33px
+  left: 42px
+  opacity: 0.7
+  animation-delay: 3s
+.star--3
+  display: block
+  top: 34px
+  left: 150px
+  opacity: 0.7
+  animation-delay: 2.3s
+.star--4
+  display: block
+  top: 24px
+  right: 30px
+  opacity: 0.7
+.star--5
+  display: block
+  top: 66px
+  right: 84px
+  opacity: 0.7
+  animation-delay: 3.5s
+
+.welcome-screen--night
+  background: linear-gradient(180deg, #241F55 0%, #382D72 44.79%, #505AB8 70%)
+.cloud-1, .cloud-2
+  display: none
+.line-1 path, .line-2 path
+  fill:  #201B57
+.m-1 path
+  fill: #4B3F95
+.m-2 path
+  fill: #3E337E
+.m-4 rect
+  fill:  #50519D
+.m-3 stop
+  stop-color: #454590
+.m-5 path
+  fill: #282767
+.m-6 path
+  fill: #201B57
+.sun
+  display: none
+.star
+  background: #FFFFFF
+  height: 2px
+  width: 2px
+  position: absolute
+  border-radius: 50%
+  animation-duration: 1s
+  animation-delay: 2000ms
+  animation-name: star
+  animation-iteration-count: infinite
+  animation-direction: alternate
+.star--1
+  display: block
+  opacity: 0.7
+  left: 31px
+  top: 27px
+  animation-delay: 4s
+.star--2
+  display: block
+  opacity: 1
+  width: 4px
+  height: 4px
+  left: 54px
+  top: 56px
+.star--3
+  display: block
+  opacity: 0.7
+  left: 29px
+  top: 94px
+  animation-delay: 2.3s
+.star--4
+  display: block
+  opacity: 0.7
+  left: 136px
+  top: 23px
+.star--5
+  display: block
+  opacity: 0.7
+  left: 151px
+  top: 35px
+  animation-delay: 3s
+.star--6
+  display: block
+  opacity: 0.7
+  left: 124px
+  top: 95px
+  animation-delay: 2.3s
+.star--7
+  display: block
+  opacity: 0.7
+  right: 135px
+  top: 24px
+  animation-delay: 3s
+.star--8
+  display: block
+  opacity: 1
+  top: 56px
+  right: 53px
+  animation-delay: 4s
+.star--9
+  display: block
+  opacity: 1
+  width: 4px
+  height: 4px
+  right: 68px
+  top: 37px
+  animation-delay: 2.3s
+.star--10
+  display: block
+  opacity: 0.7
+  right: 30px
+  top: 25px
+  animation-delay: 3s
+.star--11
+  display: block
+  opacity: 1
+  width: 4px
+  height: 4px
+  right: 20px
+  top: 96px
+.shooting-star
+  display: block
+  position: absolute
+  right: -300px
+  top: -200px
+  animation-duration: 8s
+  animation-delay: 2000ms
+  animation-name: starShooting
+  animation-iteration-count: infinite
+.moon
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  top: 280px
+  margin: auto
+  height: 50px
+  width: 50px
+@keyframes starShooting
+  to
+    right: 600px
+    top: 350px

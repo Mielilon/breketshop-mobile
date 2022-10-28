@@ -1,0 +1,241 @@
+.text-field 
+  width: 100% 
+  border: 1px solid #c4c4c4 
+  border-radius: 3px 
+  color: #151515 
+  font: inherit 
+  outline: 0 
+  padding: 8px 18px 
+  font-size: 12px 
+  line-height: 22px 
+  &:focus 
+    & + .text-field-dropdown 
+      display: block 
+.text-field-wrapper 
+  margin-top: 10px 
+  display: flex 
+  flex-direction: column 
+  position: relative 
+.form-label 
+  font-size: 11px 
+  line-height: 16px 
+  margin-bottom: 5px 
+.checkbox,.radio 
+  position: absolute 
+  left: -9999px 
+  opacity: 0 
+  z-index: -100 
+.checkbox-label,.radio-label 
+  font-weight: 400 
+  font-size: 11px 
+  line-height: 16px 
+  position: relative 
+  padding-left: 28px 
+  display: flex 
+  align-items: center 
+  justify-content: flex-start 
+  white-space: nowrap 
+  height: 20px 
+.checkbox-label::after,.checkbox-label::before,.radio-label::after,.radio-label::before 
+  content: "" 
+  position: absolute 
+.checkbox-label::before,.radio-label::before 
+  height: 20px 
+  width: 20px 
+  border: 1px solid #3298d7 
+  border-radius: 3px 
+  left: 0 
+.checkbox-label::after,.radio-label::after 
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5L5.28571 7L11 1' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E") 
+  height: 10px 
+  width: 22px 
+  background-position: center 
+  background-size: contain 
+  background-repeat: no-repeat 
+  left: 0 
+.checkbox 
+  &:checked 
+    & + .checkbox-label 
+      &::before 
+        background-color: #3298d7 
+.checkbox-label--main-color 
+  margin-top: 20px 
+  color: #3298d7 
+  a 
+    color: #3298d7!important 
+.radio-label 
+  padding: 20px 18px 
+  border-bottom: 1px solid #e5e5e5 
+  &::before 
+    border-radius: 50% 
+    right: 18px 
+    left: auto 
+    border-width: 2px 
+  &::after 
+    height: 10px 
+    width: 10px 
+    background: #fff 
+    right: 25px 
+    left: auto 
+    border-radius: 50% 
+  &:nth-child(2) 
+    border-top: 1px solid #e5e5e5 
+.radio 
+  &:checked 
+    & + .radio-label 
+      color: #3298d7 
+      &::after 
+        background: #3298d7 
+.err-info 
+  position: absolute 
+  z-index: -100 
+  left: -10000px 
+.err 
+  .text-field 
+    border-color: #df4f4a!important 
+  label 
+    color: #df4f4a 
+  .err-info 
+    position: static 
+    z-index: 1 
+    margin: 10px 0 0 
+    font-size: 10px 
+    color: #df4f4a 
+.form-policy 
+  font-size: 11px 
+  line-height: 16px 
+  color: #8e8e8e 
+  a 
+    color: #3298d7 
+    text-decoration: underline 
+.text-field--confirmed 
+  position: relative 
+  &::before 
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='14' viewBox='0 0 15 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='6.25' stroke='%233297D7' stroke-width='1.5'/%3E%3Cpath d='M6.65517 6.2L5.51724 5L4 6.2L8.55172 11L15 4.6L11.9655 1L6.65517 6.2Z' fill='white'/%3E%3Cpath d='M4 6.81818L6.33333 9L11 5' stroke='%233297D7' stroke-width='1.5'/%3E%3C/svg%3E") 
+    content: "" 
+    height: 18px 
+    width: 18px 
+    background-position: center 
+    background-size: contain 
+    background-repeat: no-repeat 
+    position: absolute 
+    right: 10px 
+    top: 36px 
+.select-wrapper--border-main 
+  .selected 
+    border-color: #3298d7 
+.privacy-policy 
+  font-size: 11px 
+  line-height: 16px 
+  color: #8e8e8e 
+  a 
+    text-decoration: underline 
+    color: #3298d7 
+.selector 
+  margin-top: 14px 
+.select-wrapper 
+  width: 100% 
+  position: relative 
+.selected 
+  position: relative 
+  width: 100% 
+  border: 1px solid #3298d7 
+  border-radius: 3px 
+  padding: 12px 40px 10px 18px 
+  &::before 
+    position: absolute 
+    content: "" 
+    width: 10px 
+    height: 100% 
+    right: 20px 
+    top: 0 
+    background-repeat: no-repeat 
+    background-size: contain 
+    background-position: center 
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.18912 4.8764C3.58825 5.42946 4.41175 5.42946 4.81088 4.87641L7.1861 1.58521C7.6634 0.923842 7.19083 0 6.37522 0H1.62478C0.809174 0 0.336598 0.923841 0.813896 1.58521L3.18912 4.8764Z' fill='%23222B39'/%3E%3C/svg%3E%0A") 
+.selected--active 
+  border-radius: 3px 3px 0 0 
+.select 
+  position: absolute 
+  z-index: 2 
+  top: 100% 
+  width: 100% 
+  padding: 0 
+  list-style: none 
+  display: none 
+  background-color: #3298d7 
+  border-radius: 0 0 3px 3px 
+.select--active 
+  display: block 
+.select-item 
+  padding: 12px 40px 10px 18px 
+  color: #fff 
+  border-bottom: 1px solid #fff 
+  &:last-child 
+    border-bottom: none 
+.text-field-dropdown 
+  position: absolute 
+  top: calc(100% - 4px) 
+  z-index: 10 
+  background: #3297D7 
+  width: 100% 
+  color: #fff 
+  font-size: 13px 
+  list-style: none 
+  display: none 
+.text-field-dropdown__item 
+  padding: 16px 
+  border-bottom: 1px solid rgba(255,255,255,0.2) 
+.add-file-button 
+  background: #C4C4C4 
+  border-radius: 3px 
+  color: #fff 
+  padding: 10px 20px 
+  width: min-content 
+  white-space: nowrap 
+  z-index: 5 
+  margin-top: 10px 
+  font-size: 12px 
+  position: relative 
+  &::before 
+    content: attr(data-file-name) 
+    position: absolute 
+    right: -120px 
+    font-size: 12px 
+    color: #959595 
+.add-file 
+  position: absolute 
+  top: 30px 
+  opacity: 0 
+.select-address-row
+  display: flex
+  align-items: center
+  gap: 10px
+  flex-wrap: wrap
+  border: 1px solid #8e8e8e
+  border-radius: 8px
+  padding: 4px 10px 10px
+.select-address-text
+  margin-bottom: 0
+.select-address-field
+  padding: 5px 12px
+.select-address-button
+  border-radius: 8px
+  padding: 3px 10px
+.select-address-delete
+  height: 20px
+  width: 20px
+  border: none
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 18C2.45 18 1.97933 17.8043 1.588 17.413C1.196 17.021 1 16.55 1 16V3C0.716667 3 0.479 2.90433 0.287 2.713C0.0956668 2.521 0 2.28333 0 2C0 1.71667 0.0956668 1.479 0.287 1.287C0.479 1.09567 0.716667 1 1 1H5C5 0.716667 5.096 0.479 5.288 0.287C5.47933 0.0956666 5.71667 0 6 0H10C10.2833 0 10.521 0.0956666 10.713 0.287C10.9043 0.479 11 0.716667 11 1H15C15.2833 1 15.5207 1.09567 15.712 1.287C15.904 1.479 16 1.71667 16 2C16 2.28333 15.904 2.521 15.712 2.713C15.5207 2.90433 15.2833 3 15 3V16C15 16.55 14.8043 17.021 14.413 17.413C14.021 17.8043 13.55 18 13 18H3ZM3 3V16H13V3H3ZM5 13C5 13.2833 5.096 13.5207 5.288 13.712C5.47933 13.904 5.71667 14 6 14C6.28333 14 6.521 13.904 6.713 13.712C6.90433 13.5207 7 13.2833 7 13V6C7 5.71667 6.90433 5.479 6.713 5.287C6.521 5.09567 6.28333 5 6 5C5.71667 5 5.47933 5.09567 5.288 5.287C5.096 5.479 5 5.71667 5 6V13ZM9 13C9 13.2833 9.096 13.5207 9.288 13.712C9.47933 13.904 9.71667 14 10 14C10.2833 14 10.521 13.904 10.713 13.712C10.9043 13.5207 11 13.2833 11 13V6C11 5.71667 10.9043 5.479 10.713 5.287C10.521 5.09567 10.2833 5 10 5C9.71667 5 9.47933 5.09567 9.288 5.287C9.096 5.479 9 5.71667 9 6V13ZM3 3V16V3Z' fill='%23f54040'/%3E%3C/svg%3E")
+  background-color: transparent
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+.add-address-wrapper
+  gap: 5px !important
+  max-height: auto
+  .select-address-field
+    margin-bottom: 10px
+  .select-address-button-save
+    margin-right: auto
+    padding: 3px 20px

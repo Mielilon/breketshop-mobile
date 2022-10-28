@@ -1,0 +1,64 @@
+.sorting-wrapper 
+  height: 25px 
+  width: 200px 
+  margin-left: -4px 
+  &.active 
+    .sorting 
+      border: 2px solid #3298d7 
+      background-color: #fff 
+      z-index: 6 
+      &::before 
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.36343 2.47029L7.96945 9.85039V15.7004L12.0309 13.1004V9.85039L18.637 2.47029C19.0133 2.04779 18.6972 1.40039 18.1137 1.40039H1.88669C1.30319 1.40039 0.987067 2.04779 1.36343 2.47029Z' stroke='%233297D7' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 
+      .sorting-item 
+        opacity: 1 
+        color: #3298d7 
+        &.active 
+          color: #151515 
+.sorting 
+  position: absolute 
+  list-style: none 
+  font-size: 12px 
+  line-height: 25px 
+  display: flex 
+  flex-direction: column 
+  align-items: flex-start 
+  justify-content: flex-start 
+  border-radius: 5px 
+  overflow: hidden 
+  border: 2px solid transparent 
+  z-index: -3 
+  &::before 
+    content: "" 
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.36343 2.47029L7.96945 9.85039V15.7004L12.0309 13.1004V9.85039L18.637 2.47029C19.0133 2.04779 18.6972 1.40039 18.1137 1.40039H1.88669C1.30319 1.40039 0.987067 2.04779 1.36343 2.47029Z' stroke='%23B4B4B4' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") 
+    position: absolute 
+    height: 18px 
+    width: 20px 
+    background-repeat: no-repeat 
+    background-size: contain 
+    background-position: center 
+    left: 4px 
+    top: 2px 
+    z-index: 7 
+.sorting-item 
+  opacity: 0 
+  padding-left: 30px 
+  max-width: 200px 
+  padding-right: 24px 
+  &.active 
+    opacity: 1 
+    position: relative 
+    display: flex 
+    align-items: center 
+    justify-content: flex-start 
+    order: -1 
+    &::before 
+      content: "" 
+      position: absolute 
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.18911 4.8764C3.58825 5.42946 4.41175 5.42946 4.81088 4.87641L7.1861 1.58521C7.6634 0.923842 7.19083 0 6.37522 0H1.62478C0.809174 0 0.336598 0.923841 0.813896 1.58521L3.18911 4.8764Z' fill='%23222B39'/%3E%3C/svg%3E%0A") 
+      background-position: center 
+      background-size: contain 
+      background-repeat: no-repeat 
+      height: 10px 
+      width: 10px 
+      right: 6px 
+      top: 6px 
